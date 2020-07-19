@@ -11,13 +11,13 @@ var aboutX, aboutY, worksX, worksY;
 
 function preload() {
   //seals
-  myName = loadImage('http://localhost:1313/homepage/images/name.png');
-  about = loadImage('http://localhost:1313/homepage/images/about.png');
-  works = loadImage('http://localhost:1313/homepage/images/works.png');
+  myName = loadImage('https://quirky-stonebraker-ec0cd7.netlify.app/homepage/images/name.png');
+  about = loadImage('https://quirky-stonebraker-ec0cd7.netlify.app/homepage/images/about.png');
+  works = loadImage('https://quirky-stonebraker-ec0cd7.netlify.app/homepage/images/works.png');
 
   //mountains
   for(let i = 1; i < 8; i++){
-    images.push(loadImage('http://localhost:1313/homepage/images/'+i+'.png'));
+    images.push(loadImage('https://quirky-stonebraker-ec0cd7.netlify.app/homepage/images/'+i+'.png'));
   }
 
   console.log(images)
@@ -47,7 +47,7 @@ function mouseClicked(){
       }
   else if(worksX < mouseX && mouseX < worksX+150
     && worksY < mouseY && mouseY < worksY+150){
-      window.location.href = "http://localhost:1313/portfolio/";
+      window.location.href = "https://quirky-stonebraker-ec0cd7.netlify.app/portfolio/";
     }
   else{
     peaks = Math.floor(random(2,7));
